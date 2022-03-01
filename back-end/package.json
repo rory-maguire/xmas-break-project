@@ -1,0 +1,23 @@
+{
+	"name": "back-end",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"type": "module",
+	"scripts": {
+		"dev": "nodemon -r dotenv/config ./index.js",
+		"dbcreatetable": " nodemon -r dotenv/config ./db/scripts/dbCreateTable.js",
+		"dbpopulatetable": " nodemon-r dotenv/config ./db/scripts/dbPopulateTable.js"
+	},
+	"author": "Rory Maguire",
+	"license": "ISC",
+	"dependencies": {
+		"cors": "^2.8.5",
+		"dotenv": "^10.0.0",
+		"express": "^4.17.2",
+		"pg": "^8.7.1"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.15"
+	}
+}
